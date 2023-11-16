@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MyContacts"
         tools:targetApi="31">
         <activity
+            android:name=".view.SaveContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ListContactsActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.LoginActivity"
             android:exported="true">
             <intent-filter>
