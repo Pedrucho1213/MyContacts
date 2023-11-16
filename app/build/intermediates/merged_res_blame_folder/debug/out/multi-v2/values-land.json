@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycontacts.app-mergeDebugResources-30:/values-land/values-land.xml",
+            "outputFile": "com.example.mycontacts.app-mergeDebugResources-35:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c8f320f2af0e3d1abaac882ec243a192/transformed/material-1.10.0/res/values-land/values-land.xml",
+                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/881052be278839d69e0b578c20d53ced/transformed/material-1.10.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,35,40",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/e0d641b614ba3263672118c0ac631eca/transformed/appcompat-1.6.1/res/values-land/values-land.xml",
+                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/ad32a0d7013bec743dc6ce35960e0ee2/transformed/appcompat-1.6.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

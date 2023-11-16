@@ -1,6 +1,6 @@
 [
     {
-        "merged": "com.example.mycontacts.app-mergeDebugResources-31:/layout/activity_main.xml",
-        "source": "com.example.mycontacts.app-main-34:/layout/activity_main.xml"
+        "merged": "com.example.mycontacts.app-mergeDebugResources-36:/layout/activity_login.xml",
+        "source": "com.example.mycontacts.app-main-39:/layout/activity_login.xml"
     }
 ]
