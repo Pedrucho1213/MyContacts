@@ -35,20 +35,15 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final Button registerBtn;
 
-  @NonNull
-  public final ConstraintLayout rootLayout;
-
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextInputLayout emailTxt, @NonNull Button googleBtn, @NonNull Button loginBtn,
-      @NonNull TextInputLayout passTxt, @NonNull Button registerBtn,
-      @NonNull ConstraintLayout rootLayout) {
+      @NonNull TextInputLayout passTxt, @NonNull Button registerBtn) {
     this.rootView = rootView;
     this.emailTxt = emailTxt;
     this.googleBtn = googleBtn;
     this.loginBtn = loginBtn;
     this.passTxt = passTxt;
     this.registerBtn = registerBtn;
-    this.rootLayout = rootLayout;
   }
 
   @Override
@@ -108,10 +103,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout rootLayout = (ConstraintLayout) rootView;
-
       return new ActivityLoginBinding((ConstraintLayout) rootView, emailTxt, googleBtn, loginBtn,
-          passTxt, registerBtn, rootLayout);
+          passTxt, registerBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

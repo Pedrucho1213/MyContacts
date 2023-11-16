@@ -74,12 +74,8 @@ id name_contact_txt
 id number_contact_txt
 id pass_txt
 id register_btn
-id root_layout
-layout activity_list_contacts
 layout activity_login
-layout activity_save_contact
 layout card_contact
-layout fragment_new_contact
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
@@ -93,7 +89,6 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-string hello_blank_fragment
 string login
 string or
 string password
@@ -101,7 +96,6 @@ string project_id
 string register
 string sign_in
 string sign_in_with_google
-string welcome_message
 style Base.Theme.MyContacts
 style RoundedCorners
 style TextInputLayoutStyle

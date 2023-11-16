@@ -72,7 +72,6 @@
     <string name="google_app_id" translatable="false">1:217322878573:android:067b502079856d0fcb7164</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBCm-f9DeAcXfqs5jISBzZW2EySKA7AAI8</string>
     <string name="google_storage_bucket" translatable="false">mycontacts-baaef.appspot.com</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login">Login</string>
     <string name="or">OR</string>
     <string name="password">Password</string>
@@ -80,7 +79,6 @@
     <string name="register">Register</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_in_with_google">Sign in with Google</string>
-    <string name="welcome_message">Welcome, %s!</string>
     <style name="Base.Theme.MyContacts" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_light_primary</item>
         <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>

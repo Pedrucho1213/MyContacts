@@ -70,7 +70,5 @@ dependencies {
     implementation(libs.firestore.ktx)
     implementation(libs.firebase.storage.ktx)
     implementation (libs.firebase.auth)
-    implementation(libs.play.services.auth)
-
 
 }

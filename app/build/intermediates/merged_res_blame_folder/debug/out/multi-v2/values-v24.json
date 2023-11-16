@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycontacts.app-mergeDebugResources-45:/values-v24/values-v24.xml",
+            "outputFile": "com.example.mycontacts.app-mergeDebugResources-35:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/4d9e53626bacd0421b00aadfc5120b4b/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c1a8a020722dc88399c8bf93233ce23c/transformed/material-1.10.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/881052be278839d69e0b578c20d53ced/transformed/material-1.10.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -30,6 +20,16 @@
                         "endLines": "4,5,6,7,10,13,16,19",
                         "endColumns": "84,98,86,100,10,10,10,10",
                         "endOffsets": "427,526,613,714,913,1126,1327,1542"
+                    }
+                },
+                {
+                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/ad32a0d7013bec743dc6ce35960e0ee2/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
                     }
                 }
             ]

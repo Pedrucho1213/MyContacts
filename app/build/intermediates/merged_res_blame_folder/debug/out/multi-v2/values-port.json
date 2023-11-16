@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycontacts.app-mergeDebugResources-45:/values-port/values-port.xml",
+            "outputFile": "com.example.mycontacts.app-mergeDebugResources-35:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/4d9e53626bacd0421b00aadfc5120b4b/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/ad32a0d7013bec743dc6ce35960e0ee2/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
