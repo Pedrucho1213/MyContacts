@@ -2,6 +2,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    id("com.google.gms.google-services")
+
 }
 
 android {
@@ -34,6 +36,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -45,4 +50,21 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Image loader
+    implementation(libs.glide)
+
+    // lifecycle libraries
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.androidx.lifecycle.livedata)
+
+    // Coroutines library
+    implementation(libs.kotlinx.coroutines.android)
+
+    // Firebase libraries
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation(libs.analytics.ktx)
+    implementation(libs.firestore.ktx)
+    implementation(libs.firebase.storage.ktx)
+
 }
