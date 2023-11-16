@@ -1,4 +1,4 @@
-#Wed Nov 15 22:13:31 CST 2023
+#Thu Nov 16 11:56:55 CST 2023
 base.0=/Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
 base.1=/Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
 base.2=/Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/2/classes.dex

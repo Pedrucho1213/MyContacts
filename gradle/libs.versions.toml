@@ -14,6 +14,7 @@ lifecycle-viewmodel = "2.6.2"
 kotlinx-coroutines-android = "1.6.1"
 google = "4.4.0"
 firebase-auth = "22.1.2"
+play-services-auth = "20.7.0"
 preference-ktx = "1.2.1"
 
 
@@ -36,6 +37,7 @@ kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutine
 firestore-ktx = {module = "com.google.firebase:firebase-firestore-ktx"}
 analytics-ktx = {module = "com.google.firebase:firebase-analytics-ktx"}
 androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preference-ktx" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "play-services-auth" }
 
 
 

@@ -4,7 +4,7 @@
             "outputFile": "com.example.mycontacts.test.app-mergeDebugAndroidTestResources-3:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/cbc52662c93df82e34120b351a55332b/transformed/core-1.5.0/res/values-v18/values.xml",
+                    "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/b46e874839c799cdc342a1958466ca18/transformed/core-1.5.0/res/values-v18/values.xml",
                     "from": {
                         "startLines": "4,12",
                         "startColumns": "0,0",
