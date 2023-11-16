@@ -3055,6 +3055,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable google
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -3066,6 +3067,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_email_24
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3077,6 +3079,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable lock_24px
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3335,6 +3338,7 @@ id edge
 id edit_query
 id edit_text_id
 id elastic
+id email_txt
 id embed
 id end
 id endToStart
@@ -3364,6 +3368,7 @@ id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
 id gone
+id google_btn
 id graph
 id graph_wrap
 id group_divider
@@ -3383,6 +3388,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_contact_img
 id immediateStop
 id included
 id indeterminate
@@ -3404,6 +3410,7 @@ id line3
 id linear
 id listMode
 id list_item
+id login_btn
 id m3_side_sheet
 id marquee
 id masked
@@ -3464,6 +3471,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_contact_txt
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3482,6 +3490,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id number_contact_txt
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3508,6 +3517,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id pass_txt
 id password_toggle
 id path
 id pathRelative
@@ -3522,6 +3532,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id register_btn
 id report_drawn
 id reverseSawtooth
 id right
@@ -3779,6 +3790,7 @@ layout abc_tooltip
 layout activity_login
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout card_contact
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3927,8 +3939,12 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string contact_image
+string contact_name
+string contact_number
 string copy_toast_msg
 string default_web_client_id
+string email
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3945,6 +3961,7 @@ string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string login
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4045,18 +4062,23 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string or
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string register
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string sign_in
+string sign_in_with_google
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -4383,6 +4405,7 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
+style RoundedCorners
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon
@@ -4582,6 +4605,7 @@ style TextAppearance_MaterialComponents_Tooltip
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
+style TextInputLayoutStyle
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight

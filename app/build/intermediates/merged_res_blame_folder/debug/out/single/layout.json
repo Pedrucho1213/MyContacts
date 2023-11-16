@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-mergeDebugResources-36:/layout/activity_login.xml",
+        "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-39:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-mergeDebugResources-36:/layout/card_contact.xml",
+        "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-39:/layout/card_contact.xml"
+    },
+    {
         "merged": "com.example.mycontacts.app-mergeDebugResources-36:/layout/activity_login.xml",
         "source": "com.example.mycontacts.app-main-39:/layout/activity_login.xml"
     }

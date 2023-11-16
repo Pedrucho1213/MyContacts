@@ -62,13 +62,23 @@
     <color name="md_theme_light_tertiaryContainer">#FFD8E4</color>
     <color name="seed">#6750A4</color>
     <string name="app_name">MyContacts</string>
+    <string name="contact_image">contact image</string>
+    <string name="contact_name">contact name</string>
+    <string name="contact_number">contact number</string>
     <string name="default_web_client_id" translatable="false">217322878573-tj5bosl5hodvq387efi2cesba26o8kgf.apps.googleusercontent.com</string>
+    <string name="email">Email</string>
     <string name="gcm_defaultSenderId" translatable="false">217322878573</string>
     <string name="google_api_key" translatable="false">AIzaSyBCm-f9DeAcXfqs5jISBzZW2EySKA7AAI8</string>
     <string name="google_app_id" translatable="false">1:217322878573:android:067b502079856d0fcb7164</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBCm-f9DeAcXfqs5jISBzZW2EySKA7AAI8</string>
     <string name="google_storage_bucket" translatable="false">mycontacts-baaef.appspot.com</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="password">Password</string>
     <string name="project_id" translatable="false">mycontacts-baaef</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
     <style name="Base.Theme.MyContacts" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_light_primary</item>
         <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
@@ -97,6 +107,16 @@
         <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
 
+    </style>
+    <style name="RoundedCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
     </style>
     <style name="Theme.MyContacts" parent="Base.Theme.MyContacts"/>
 </resources>

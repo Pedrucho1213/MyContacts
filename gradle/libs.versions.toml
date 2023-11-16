@@ -14,6 +14,7 @@ lifecycle-viewmodel = "2.6.2"
 kotlinx-coroutines-android = "1.6.1"
 google = "4.4.0"
 firebase-auth = "22.1.2"
+preference-ktx = "1.2.1"
 
 
 
@@ -34,6 +35,8 @@ androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmode
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines-android" }
 firestore-ktx = {module = "com.google.firebase:firebase-firestore-ktx"}
 analytics-ktx = {module = "com.google.firebase:firebase-analytics-ktx"}
+androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preference-ktx" }
+
 
 
 
