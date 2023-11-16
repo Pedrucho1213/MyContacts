@@ -66,5 +66,6 @@ dependencies {
     implementation(libs.analytics.ktx)
     implementation(libs.firestore.ktx)
     implementation(libs.firebase.storage.ktx)
+    implementation (libs.firebase.auth)
 
 }

@@ -13,6 +13,7 @@ glide = "4.12.0"
 lifecycle-viewmodel = "2.6.2"
 kotlinx-coroutines-android = "1.6.1"
 google = "4.4.0"
+firebase-auth = "22.1.2"
 
 
 
@@ -20,6 +21,7 @@ google = "4.4.0"
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 firebase-storage-ktx = { module = "com.google.firebase:firebase-storage-ktx", version.ref = "firebase-storage-ktx" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebase-auth" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
