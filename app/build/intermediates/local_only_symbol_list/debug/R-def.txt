@@ -104,6 +104,7 @@ id pass_txt
 id paternal_input
 id paternal_txt
 id register_btn
+id root_layout
 id save_btn
 id search_bar
 id search_container

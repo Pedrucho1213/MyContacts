@@ -17,7 +17,7 @@ class ContactAdapter(private var contact: List<Contact>, private val context: Co
     override fun getItemCount(): Int = contact.size
     override fun onBindViewHolder(holder: ContactViewHolder, position: Int) {
         val contact = contact[position]
-        holder.bindView(contact, context)
+        holder.bind(contact, context)
     }
 
     fun updateData(filteredPosts: List<Contact>) {

@@ -13,6 +13,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -59,6 +60,13 @@ class SaveContactActivity : AppCompatActivity() {
         }
 
         setEvents()
+    }
+
+    private fun hideKeyboard() {
+        val inputMethodManager =
+            getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+
     }
 
     private fun fetchDataAndDisableFields(number: Int) {
@@ -110,8 +118,9 @@ class SaveContactActivity : AppCompatActivity() {
                         menuItem.title = "Update"
                         isEditMode = !isEditMode
                     }
-                     true
+                    true
                 }
+
                 else -> false
             }
         }
@@ -122,6 +131,17 @@ class SaveContactActivity : AppCompatActivity() {
 
         binding.imageBtn.setOnClickListener {
             showImagePickerDialog()
+        }
+
+        binding.rootLayout.setOnClickListener {
+            hideKeyboard()
+
+            binding.nameTxt.editText?.clearFocus()
+            binding.paternalTxt.editText?.clearFocus()
+            binding.maternalTxt.editText?.clearFocus()
+            binding.ageTxt.editText?.clearFocus()
+            binding.numberTxt.editText?.clearFocus()
+            binding.gender.editText?.clearFocus()
         }
     }
 

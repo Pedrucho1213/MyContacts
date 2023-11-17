@@ -75,6 +75,9 @@ public final class ActivitySaveContactBinding implements ViewBinding {
   public final TextInputLayout paternalTxt;
 
   @NonNull
+  public final ConstraintLayout rootLayout;
+
+  @NonNull
   public final MaterialToolbar topAppBar;
 
   private ActivitySaveContactBinding(@NonNull ConstraintLayout rootView,
@@ -85,7 +88,8 @@ public final class ActivitySaveContactBinding implements ViewBinding {
       @NonNull TextInputLayout maternalTxt, @NonNull TextInputEditText nameInput,
       @NonNull TextInputLayout nameTxt, @NonNull TextInputEditText numberInput,
       @NonNull TextInputLayout numberTxt, @NonNull TextInputEditText paternalInput,
-      @NonNull TextInputLayout paternalTxt, @NonNull MaterialToolbar topAppBar) {
+      @NonNull TextInputLayout paternalTxt, @NonNull ConstraintLayout rootLayout,
+      @NonNull MaterialToolbar topAppBar) {
     this.rootView = rootView;
     this.ageInput = ageInput;
     this.ageTxt = ageTxt;
@@ -103,6 +107,7 @@ public final class ActivitySaveContactBinding implements ViewBinding {
     this.numberTxt = numberTxt;
     this.paternalInput = paternalInput;
     this.paternalTxt = paternalTxt;
+    this.rootLayout = rootLayout;
     this.topAppBar = topAppBar;
   }
 
@@ -229,6 +234,8 @@ public final class ActivitySaveContactBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout rootLayout = (ConstraintLayout) rootView;
+
       id = R.id.topAppBar;
       MaterialToolbar topAppBar = ViewBindings.findChildViewById(rootView, id);
       if (topAppBar == null) {
@@ -238,7 +245,7 @@ public final class ActivitySaveContactBinding implements ViewBinding {
       return new ActivitySaveContactBinding((ConstraintLayout) rootView, ageInput, ageTxt,
           appBarContainer, autoCompleteTextView, gender, imageBtn, imgView, indicator,
           maternalInput, maternalTxt, nameInput, nameTxt, numberInput, numberTxt, paternalInput,
-          paternalTxt, topAppBar);
+          paternalTxt, rootLayout, topAppBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
