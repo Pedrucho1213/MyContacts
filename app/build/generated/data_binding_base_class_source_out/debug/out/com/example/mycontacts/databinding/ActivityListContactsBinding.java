@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -14,7 +15,6 @@ import com.example.mycontacts.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
-import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -33,14 +33,14 @@ public final class ActivityListContactsBinding implements ViewBinding {
   public final ExtendedFloatingActionButton newContactBtn;
 
   @NonNull
-  public final SearchBar searchBar;
+  public final SearchView searchBar;
 
   @NonNull
   public final AppBarLayout searchContainer;
 
   private ActivityListContactsBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNavigation, @NonNull RecyclerView contactsRv,
-      @NonNull ExtendedFloatingActionButton newContactBtn, @NonNull SearchBar searchBar,
+      @NonNull ExtendedFloatingActionButton newContactBtn, @NonNull SearchView searchBar,
       @NonNull AppBarLayout searchContainer) {
     this.rootView = rootView;
     this.bottomNavigation = bottomNavigation;
@@ -96,7 +96,7 @@ public final class ActivityListContactsBinding implements ViewBinding {
       }
 
       id = R.id.search_bar;
-      SearchBar searchBar = ViewBindings.findChildViewById(rootView, id);
+      SearchView searchBar = ViewBindings.findChildViewById(rootView, id);
       if (searchBar == null) {
         break missingId;
       }

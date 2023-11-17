@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,7 +25,7 @@ import java.lang.String;
 
 public final class ActivitySaveContactBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final TextInputEditText ageInput;
@@ -80,7 +81,7 @@ public final class ActivitySaveContactBinding implements ViewBinding {
   @NonNull
   public final MaterialToolbar topAppBar;
 
-  private ActivitySaveContactBinding(@NonNull ConstraintLayout rootView,
+  private ActivitySaveContactBinding(@NonNull ScrollView rootView,
       @NonNull TextInputEditText ageInput, @NonNull TextInputLayout ageTxt,
       @NonNull AppBarLayout appBarContainer, @NonNull AutoCompleteTextView autoCompleteTextView,
       @NonNull TextInputLayout gender, @NonNull Button imageBtn, @NonNull ImageView imgView,
@@ -113,7 +114,7 @@ public final class ActivitySaveContactBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -234,7 +235,11 @@ public final class ActivitySaveContactBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout rootLayout = (ConstraintLayout) rootView;
+      id = R.id.root_layout;
+      ConstraintLayout rootLayout = ViewBindings.findChildViewById(rootView, id);
+      if (rootLayout == null) {
+        break missingId;
+      }
 
       id = R.id.topAppBar;
       MaterialToolbar topAppBar = ViewBindings.findChildViewById(rootView, id);
@@ -242,7 +247,7 @@ public final class ActivitySaveContactBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySaveContactBinding((ConstraintLayout) rootView, ageInput, ageTxt,
+      return new ActivitySaveContactBinding((ScrollView) rootView, ageInput, ageTxt,
           appBarContainer, autoCompleteTextView, gender, imageBtn, imgView, indicator,
           maternalInput, maternalTxt, nameInput, nameTxt, numberInput, numberTxt, paternalInput,
           paternalTxt, rootLayout, topAppBar);

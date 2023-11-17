@@ -10,15 +10,18 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/search_container"
         android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.search.SearchBar
+        <androidx.appcompat.widget.SearchView
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/searchview_background"
             android:hint="@string/search_the_contact" />
     </com.google.android.material.appbar.AppBarLayout>
 
