@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycontacts.app-mergeDebugResources-44:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.example.mycontacts.app-mergeDebugResources-45:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/509e5f73e472745f06a6a0c0397b802d/transformed/appcompat-1.6.1/res/values-ldltr-v21/values-ldltr-v21.xml",

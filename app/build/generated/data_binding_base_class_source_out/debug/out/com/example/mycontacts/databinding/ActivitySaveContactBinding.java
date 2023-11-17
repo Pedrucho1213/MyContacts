@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -13,6 +15,7 @@ import androidx.viewbinding.ViewBindings;
 import com.example.mycontacts.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -35,6 +38,15 @@ public final class ActivitySaveContactBinding implements ViewBinding {
   public final TextInputLayout gender;
 
   @NonNull
+  public final Button imageBtn;
+
+  @NonNull
+  public final ImageView imgView;
+
+  @NonNull
+  public final LinearProgressIndicator indicator;
+
+  @NonNull
   public final TextInputLayout maternalTxt;
 
   @NonNull
@@ -52,14 +64,18 @@ public final class ActivitySaveContactBinding implements ViewBinding {
   private ActivitySaveContactBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextInputLayout ageTxt, @NonNull AppBarLayout appBarContainer,
       @NonNull AutoCompleteTextView autoCompleteTextView, @NonNull TextInputLayout gender,
-      @NonNull TextInputLayout maternalTxt, @NonNull TextInputLayout nameTxt,
-      @NonNull TextInputLayout numberTxt, @NonNull TextInputLayout paternalTxt,
-      @NonNull MaterialToolbar topAppBar) {
+      @NonNull Button imageBtn, @NonNull ImageView imgView,
+      @NonNull LinearProgressIndicator indicator, @NonNull TextInputLayout maternalTxt,
+      @NonNull TextInputLayout nameTxt, @NonNull TextInputLayout numberTxt,
+      @NonNull TextInputLayout paternalTxt, @NonNull MaterialToolbar topAppBar) {
     this.rootView = rootView;
     this.ageTxt = ageTxt;
     this.appBarContainer = appBarContainer;
     this.autoCompleteTextView = autoCompleteTextView;
     this.gender = gender;
+    this.imageBtn = imageBtn;
+    this.imgView = imgView;
+    this.indicator = indicator;
     this.maternalTxt = maternalTxt;
     this.nameTxt = nameTxt;
     this.numberTxt = numberTxt;
@@ -118,6 +134,24 @@ public final class ActivitySaveContactBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.image_btn;
+      Button imageBtn = ViewBindings.findChildViewById(rootView, id);
+      if (imageBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.img_view;
+      ImageView imgView = ViewBindings.findChildViewById(rootView, id);
+      if (imgView == null) {
+        break missingId;
+      }
+
+      id = R.id.indicator;
+      LinearProgressIndicator indicator = ViewBindings.findChildViewById(rootView, id);
+      if (indicator == null) {
+        break missingId;
+      }
+
       id = R.id.maternal_txt;
       TextInputLayout maternalTxt = ViewBindings.findChildViewById(rootView, id);
       if (maternalTxt == null) {
@@ -149,7 +183,8 @@ public final class ActivitySaveContactBinding implements ViewBinding {
       }
 
       return new ActivitySaveContactBinding((ConstraintLayout) rootView, ageTxt, appBarContainer,
-          autoCompleteTextView, gender, maternalTxt, nameTxt, numberTxt, paternalTxt, topAppBar);
+          autoCompleteTextView, gender, imageBtn, imgView, indicator, maternalTxt, nameTxt,
+          numberTxt, paternalTxt, topAppBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

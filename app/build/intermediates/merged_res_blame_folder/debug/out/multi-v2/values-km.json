@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycontacts.app-mergeDebugResources-44:/values-km/values-km.xml",
+            "outputFile": "com.example.mycontacts.app-mergeDebugResources-45:/values-km/values-km.xml",
             "map": [
                 {
                     "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/f3e305b656c5db83800f0730cab5446d/transformed/core-1.12.0/res/values-km/values-km.xml",

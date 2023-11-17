@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:1-32:12
-INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:1-53:12
+INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.databinding:viewbinding:8.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5216edad1d4257e060f32cf175f2b366/transformed/viewbinding-8.1.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.firebaseui:firebase-ui-storage:7.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/1590e35f53dd93d9733d71364158134c/transformed/firebase-ui-storage-7.2.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-storage-ktx:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7acda2bcb88bee90b9ca4b163cd4b9fa/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.android.material:material:1.10.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/1dd79b90e1e3b6b1fe79ccbcbecaab18/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/8f9d3debe8970a78ea9a6f3513520e72/transformed/firebase-analytics-ktx-21.3.0/AndroidManifest.xml:2:1-17:12
@@ -44,12 +45,14 @@ MERGED from [com.google.android.gms:play-services-measurement-base:21.3.0] /User
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/2d34e68d58986db982394fe213c026d0/transformed/play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5d667c4b367375f950ea7ab5ba851234/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/ac0a24fe18ddda4e548f7a253ce5a94f/transformed/play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/dfbdc67cd3de97e7206f8c23d74e9772/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/45e97664de63993b36a23d68e02a2899/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/b8550725e6ab363486a2bc3b495980c5/transformed/activity-ktx-1.8.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.8.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/07df39192007ecf98bf80bb2c4696bfc/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.12.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7d6e71bde4f06d5b0e25343664364f84/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/41c2ef9b438354107db30dcedb377cb9/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0691be4fd814e7855b776d0e52b4f70e/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7347326495c28439de6089ee3bc80409/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/9f428e88534649ee2428b9dd1e006ad0/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0d56e968ad39a634bec751d94387b21f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/30bff2a3cc341f752cd7290491b80f5b/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -62,6 +65,9 @@ MERGED from [androidx.loader:loader:1.0.0] /Users/pedromiguelpereztorres/.gradle
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/8a88a8a2a8eb4d856dd6426b2bd383e0/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/6e5f558ae83c55befb94f8e2143e523c/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/a1ef09dbb3f8f27aa067a69e2fba17d1/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/205a92f14127213608e367c41e003908/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/a5d54b1f73cec78cbe9e63036805ebf8/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/001661376cf3829f07fae7e3d0958f17/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.4.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/91691db67ea4a3847263d3c0052c80f2/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/fc6bd2946ca60e6afb069ade872c1ae2/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.core:core:1.12.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/f3e305b656c5db83800f0730cab5446d/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
@@ -103,9 +109,71 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/pedro
 		INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:5:5-7:36
+	android:required
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:7:9-33
+	android:name
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:6:9-47
+uses-permission#android.permission.CAMERA
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:9:22-62
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:11:22-73
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:13:5-66
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c5e9b2317e92f766d5aa04ce5a140dfa/transformed/firebase-storage-20.3.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c5e9b2317e92f766d5aa04ce5a140dfa/transformed/firebase-storage-20.3.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/e43c72aea0c080fc9c6a726e5893fa55/transformed/firebase-firestore-24.8.1/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/e43c72aea0c080fc9c6a726e5893fa55/transformed/firebase-firestore-24.8.1/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5588f8f54e949498d3185457585b455d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5588f8f54e949498d3185457585b455d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/2525f0e0b069820f20418e067a7b9415/transformed/firebase-installations-17.1.4/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/2525f0e0b069820f20418e067a7b9415/transformed/firebase-installations-17.1.4/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/02153551d79ee0f72ed1ec3cc714a646/transformed/recaptcha-18.1.2/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/02153551d79ee0f72ed1ec3cc714a646/transformed/recaptcha-18.1.2/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0ed50bd9b3f83c0aacb6be2ad7bfc51b/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0ed50bd9b3f83c0aacb6be2ad7bfc51b/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/b9f5cb06832bd0ce9bbdf2a73affece0/transformed/play-services-measurement-impl-21.3.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/b9f5cb06832bd0ce9bbdf2a73affece0/transformed/play-services-measurement-impl-21.3.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/4a6b8d236600bc261238738c5cb18569/transformed/play-services-measurement-sdk-api-21.3.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/4a6b8d236600bc261238738c5cb18569/transformed/play-services-measurement-sdk-api-21.3.0/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:13:22-64
+queries
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:15:5-23:15
+intent#action:name:android.intent.action.PICK+data:mimeType:image/*
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:16:9-19:18
+action#android.intent.action.PICK
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:17:13-65
+	android:name
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:17:21-62
+data
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:18:13-48
+	android:mimeType
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:18:19-45
+intent#action:name:android.media.action.IMAGE_CAPTURE
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:20:9-22:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:21:13-73
+	android:name
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:21:21-70
 application
-ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:5:5-30:19
-INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:5:5-30:19
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:26:5-51:19
+INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:26:5-51:19
 MERGED from [com.google.firebase:firebase-storage-ktx:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7acda2bcb88bee90b9ca4b163cd4b9fa/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-storage-ktx:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7acda2bcb88bee90b9ca4b163cd4b9fa/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.material:material:1.10.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/1dd79b90e1e3b6b1fe79ccbcbecaab18/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
@@ -183,57 +251,59 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pedromiguelpereztorr
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/f3e305b656c5db83800f0730cab5446d/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:33:9-35
 	android:label
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:31:9-41
 	android:fullBackupContent
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:8:9-54
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:29:9-54
 	android:roundIcon
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:32:9-54
 	tools:targetApi
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:14:9-29
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:35:9-29
 	android:icon
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:30:9-43
 	android:allowBackup
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:27:9-35
 	android:theme
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:13:9-48
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:34:9-48
 	android:dataExtractionRules
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:7:9-65
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:28:9-65
 activity#com.example.mycontacts.view.SaveContactActivity
-ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:15:9-17:40
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:17:13-37
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:16:13-53
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:37:13-53
 activity#com.example.mycontacts.view.ListContactsActivity
-ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:18:9-20:40
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:39:9-41:40
 	android:exported
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:20:13-37
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:19:13-54
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:40:13-54
 activity#com.example.mycontacts.view.LoginActivity
-ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:21:9-29:20
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:42:9-50:20
 	android:exported
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:23:13-36
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:22:13-47
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:43:13-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:24:13-28:29
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:25:17-69
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:25:25-66
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:27:17-77
+ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:27:27-74
+		ADDED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml:48:27-74
 uses-sdk
 INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml
 INJECTED from /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5216edad1d4257e060f32cf175f2b366/transformed/viewbinding-8.1.2/AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5216edad1d4257e060f32cf175f2b366/transformed/viewbinding-8.1.2/AndroidManifest.xml:5:5-44
+MERGED from [com.firebaseui:firebase-ui-storage:7.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/1590e35f53dd93d9733d71364158134c/transformed/firebase-ui-storage-7.2.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-storage:7.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/1590e35f53dd93d9733d71364158134c/transformed/firebase-ui-storage-7.2.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-storage-ktx:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7acda2bcb88bee90b9ca4b163cd4b9fa/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-storage-ktx:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7acda2bcb88bee90b9ca4b163cd4b9fa/transformed/firebase-storage-ktx-20.3.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.10.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/1dd79b90e1e3b6b1fe79ccbcbecaab18/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
@@ -312,6 +382,8 @@ MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/p
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5d667c4b367375f950ea7ab5ba851234/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/ac0a24fe18ddda4e548f7a253ce5a94f/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/ac0a24fe18ddda4e548f7a253ce5a94f/transformed/play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/dfbdc67cd3de97e7206f8c23d74e9772/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/dfbdc67cd3de97e7206f8c23d74e9772/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/45e97664de63993b36a23d68e02a2899/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/45e97664de63993b36a23d68e02a2899/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/b8550725e6ab363486a2bc3b495980c5/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
@@ -324,6 +396,8 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/pedromiguelperezt
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/41c2ef9b438354107db30dcedb377cb9/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0691be4fd814e7855b776d0e52b4f70e/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0691be4fd814e7855b776d0e52b4f70e/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7347326495c28439de6089ee3bc80409/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/7347326495c28439de6089ee3bc80409/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/9f428e88534649ee2428b9dd1e006ad0/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/9f428e88534649ee2428b9dd1e006ad0/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0d56e968ad39a634bec751d94387b21f/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -348,6 +422,12 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/pedromig
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/6e5f558ae83c55befb94f8e2143e523c/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/a1ef09dbb3f8f27aa067a69e2fba17d1/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/a1ef09dbb3f8f27aa067a69e2fba17d1/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/205a92f14127213608e367c41e003908/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/205a92f14127213608e367c41e003908/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/a5d54b1f73cec78cbe9e63036805ebf8/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/a5d54b1f73cec78cbe9e63036805ebf8/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/001661376cf3829f07fae7e3d0958f17/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/001661376cf3829f07fae7e3d0958f17/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.4.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/91691db67ea4a3847263d3c0052c80f2/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.4.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/91691db67ea4a3847263d3c0052c80f2/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/fc6bd2946ca60e6afb069ade872c1ae2/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -486,26 +566,6 @@ MERGED from [io.grpc:grpc-android:1.52.1] /Users/pedromiguelpereztorres/.gradle/
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/4f81bd8c5060d924de6e5a441f4ab9ad/transformed/grpc-android-1.52.1/AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c5e9b2317e92f766d5aa04ce5a140dfa/transformed/firebase-storage-20.3.0/AndroidManifest.xml:23:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-storage:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c5e9b2317e92f766d5aa04ce5a140dfa/transformed/firebase-storage-20.3.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/e43c72aea0c080fc9c6a726e5893fa55/transformed/firebase-firestore-24.8.1/AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.8.1] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/e43c72aea0c080fc9c6a726e5893fa55/transformed/firebase-firestore-24.8.1/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5588f8f54e949498d3185457585b455d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/5588f8f54e949498d3185457585b455d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/2525f0e0b069820f20418e067a7b9415/transformed/firebase-installations-17.1.4/AndroidManifest.xml:8:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/2525f0e0b069820f20418e067a7b9415/transformed/firebase-installations-17.1.4/AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/02153551d79ee0f72ed1ec3cc714a646/transformed/recaptcha-18.1.2/AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/02153551d79ee0f72ed1ec3cc714a646/transformed/recaptcha-18.1.2/AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0ed50bd9b3f83c0aacb6be2ad7bfc51b/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/0ed50bd9b3f83c0aacb6be2ad7bfc51b/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/b9f5cb06832bd0ce9bbdf2a73affece0/transformed/play-services-measurement-impl-21.3.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/b9f5cb06832bd0ce9bbdf2a73affece0/transformed/play-services-measurement-impl-21.3.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/4a6b8d236600bc261238738c5cb18569/transformed/play-services-measurement-sdk-api-21.3.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/4a6b8d236600bc261238738c5cb18569/transformed/play-services-measurement-sdk-api-21.3.0/AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-storage:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c5e9b2317e92f766d5aa04ce5a140dfa/transformed/firebase-storage-20.3.0/AndroidManifest.xml:24:22-64
 meta-data#com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar
 ADDED from [com.google.firebase:firebase-storage:20.3.0] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c5e9b2317e92f766d5aa04ce5a140dfa/transformed/firebase-storage-20.3.0/AndroidManifest.xml:30:13-32:85
 	android:value
@@ -562,14 +622,6 @@ category#android.intent.category.BROWSABLE
 ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:39:17-78
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:39:27-75
-data
-ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:41:17-44:51
-	android:path
-		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:43:21-37
-	android:host
-		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:42:21-49
-	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:44:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
 ADDED from [com.google.firebase:firebase-auth:22.1.2] /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/09c52d2e9cdd7384dc9eec78101ddd48/transformed/firebase-auth-22.1.2/AndroidManifest.xml:47:9-64:20
 	android:excludeFromRecents

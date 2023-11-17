@@ -1,5 +1,6 @@
 package com.example.mycontacts.viewModel
 
+import android.net.Uri
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,6 +12,7 @@ class ContactsViewModel : ViewModel() {
     private val existInDB = MutableLiveData<Boolean>()
     private val savedInDB = MutableLiveData<Boolean>()
     private val mutableData = MutableLiveData<MutableList<Contact>>()
+    private val savedImage = MutableLiveData<Uri>()
 
 
     fun verifyInDB(number: Int): MutableLiveData<Boolean> {
@@ -32,6 +34,13 @@ class ContactsViewModel : ViewModel() {
             mutableData.value = it
         }
         return mutableData
+    }
+
+    fun saveImage(uri: Uri): MutableLiveData<Uri>{
+        repository.saveImageToFirebaseStorage(uri).addOnSuccessListener {
+            savedImage.value = it
+        }
+        return savedImage
     }
 
 }

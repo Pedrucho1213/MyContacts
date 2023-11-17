@@ -1,26 +1,22 @@
 [
     {
-        "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-mergeDebugResources-45:/layout/fragment_new_contact.xml",
-        "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-48:/layout/fragment_new_contact.xml"
+        "merged": "com.example.mycontacts.app-mergeDebugResources-46:/layout/activity_login.xml",
+        "source": "com.example.mycontacts.app-main-49:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-mergeDebugResources-45:/layout/activity_save_contact.xml",
-        "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-48:/layout/activity_save_contact.xml"
+        "merged": "com.example.mycontacts.app-mergeDebugResources-46:/layout/fragment_new_contact.xml",
+        "source": "com.example.mycontacts.app-main-49:/layout/fragment_new_contact.xml"
     },
     {
-        "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-mergeDebugResources-45:/layout/activity_login.xml",
-        "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-48:/layout/activity_login.xml"
+        "merged": "com.example.mycontacts.app-mergeDebugResources-46:/layout/activity_list_contacts.xml",
+        "source": "com.example.mycontacts.app-main-49:/layout/activity_list_contacts.xml"
     },
     {
-        "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-mergeDebugResources-45:/layout/card_contact.xml",
-        "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-48:/layout/card_contact.xml"
+        "merged": "com.example.mycontacts.app-mergeDebugResources-46:/layout/card_contact.xml",
+        "source": "com.example.mycontacts.app-main-49:/layout/card_contact.xml"
     },
     {
-        "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-mergeDebugResources-45:/layout/activity_list_contacts.xml",
-        "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-48:/layout/activity_list_contacts.xml"
-    },
-    {
-        "merged": "com.example.mycontacts.app-mergeDebugResources-45:/layout/activity_list_contacts.xml",
-        "source": "com.example.mycontacts.app-main-48:/layout/activity_list_contacts.xml"
+        "merged": "com.example.mycontacts.app-mergeDebugResources-46:/layout/activity_save_contact.xml",
+        "source": "com.example.mycontacts.app-main-49:/layout/activity_save_contact.xml"
     }
 ]

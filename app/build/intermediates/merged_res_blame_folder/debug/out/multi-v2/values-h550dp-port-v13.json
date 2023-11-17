@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycontacts.app-mergeDebugResources-44:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.example.mycontacts.app-mergeDebugResources-45:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
                     "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/1dd79b90e1e3b6b1fe79ccbcbecaab18/transformed/material-1.10.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",

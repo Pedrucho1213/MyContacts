@@ -27,6 +27,7 @@
     <string name="gender">Gender</string>
     <string name="image_contact_button">Image contact button</string>
     <string name="telephone">Telephone</string>
+    <string name="add_photo">Add photo</string>
 
     <string-array name="gender_options">
         <item>Masculino</item>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycontacts.app-mergeDebugResources-44:/values-es/values-es.xml",
+            "outputFile": "com.example.mycontacts.app-mergeDebugResources-45:/values-es/values-es.xml",
             "map": [
                 {
                     "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/ac0a24fe18ddda4e548f7a253ce5a94f/transformed/play-services-basement-18.1.0/res/values-es/values.xml",

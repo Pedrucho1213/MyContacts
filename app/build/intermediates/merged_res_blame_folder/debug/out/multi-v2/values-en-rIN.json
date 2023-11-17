@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycontacts.app-mergeDebugResources-44:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.example.mycontacts.app-mergeDebugResources-45:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/Users/pedromiguelpereztorres/.gradle/caches/transforms-3/c82c400eebc305c570d9ecd29accd65f/transformed/browser-1.4.0/res/values-en-rIN/values-en-rIN.xml",

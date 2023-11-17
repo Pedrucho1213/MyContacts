@@ -52,7 +52,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     // SharedPreference library
-    implementation (libs.androidx.preference.ktx)
+    implementation(libs.androidx.preference.ktx)
 
     // Image loader
     implementation(libs.glide)
@@ -69,6 +69,10 @@ dependencies {
     implementation(libs.analytics.ktx)
     implementation(libs.firestore.ktx)
     implementation(libs.firebase.storage.ktx)
-    implementation (libs.firebase.auth)
+    implementation(libs.firebase.auth)
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation("com.firebaseui:firebase-ui-storage:7.2.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+
 
 }

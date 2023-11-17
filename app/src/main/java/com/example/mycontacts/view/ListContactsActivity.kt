@@ -26,6 +26,11 @@ class ListContactsActivity : AppCompatActivity() {
         getAllData()
     }
 
+    override fun onResume() {
+        super.onResume()
+        getAllData()
+    }
+
     private fun getAllData() {
         contacts.clear()
         viewModel.fetchContacts().observe(this){

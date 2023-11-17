@@ -24,7 +24,8 @@ class FirebaseRepository {
 
 
     fun saveContactToFireStore(contact: Contact): LiveData<Boolean> {
-        if (session != null) {
+        session = "pmpedrotorres@gmail.com"
+        if (!session.isNullOrBlank()) {
             val contactCollection = fireStore.collection("Contacts")
             contactCollection.add(contact)
                 .addOnSuccessListener {
