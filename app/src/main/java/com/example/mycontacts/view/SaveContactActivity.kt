@@ -166,7 +166,7 @@ class SaveContactActivity : AppCompatActivity() {
             age,
             number,
             gender,
-            selectedImageUri.toString(),
+            selectedImageUri?.toString() ?: "",
             "session"
         )
         viewModel.saveContactInDb(contact).observe(this) { result ->
