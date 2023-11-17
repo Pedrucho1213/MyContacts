@@ -136,16 +136,17 @@ class SaveContactActivity : AppCompatActivity() {
                     Snackbar.make(
                         binding.root,
                         "This number is already registered",
-                        Snackbar.LENGTH_SHORT
+                        Snackbar.LENGTH_LONG
                     ).show()
                     binding.indicator.visibility = View.GONE
 
                 } else {
                     if (isNetworkAvailable(this)) {
-                        selectedImageUri?.let {
-                            uploadImageToFirebase(it)
+                        if (selectedImageUri != null) {
+                            uploadImageToFirebase(selectedImageUri!!)
+                        } else {
+                            saveContact()
                         }
-
                     }
                 }
             }
@@ -209,8 +210,8 @@ class SaveContactActivity : AppCompatActivity() {
             viewModel.saveImage(uri).observe(this) { result ->
                 if (!result.toString().isNullOrBlank()) {
                     selectedImageUri = result
-                    saveContact()
                 }
+                saveContact()
             }
         }
     }
