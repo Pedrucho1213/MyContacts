@@ -131,6 +131,11 @@ class SaveContactActivity : AppCompatActivity() {
                     true
                 }
 
+                R.id.delete -> {
+                    deleteContact(contact.value?.number.toString().toInt())
+                    true
+                }
+
                 else -> false
             }
         }
@@ -259,6 +264,16 @@ class SaveContactActivity : AppCompatActivity() {
                         .show()
                     finish()
                 }
+            }
+        }
+    }
+
+    private fun deleteContact(number: Int) {
+        viewModel.deleteContact(number).observe(this) {
+            if (it) {
+                Toast.makeText(this, "Contact deleted successfully", Toast.LENGTH_SHORT)
+                    .show()
+                finish()
             }
         }
     }

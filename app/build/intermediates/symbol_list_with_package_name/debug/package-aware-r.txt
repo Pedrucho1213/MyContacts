@@ -3159,6 +3159,7 @@ drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_close_24
 drawable ic_contacts_24
+drawable ic_delete_outline_24
 drawable ic_email_24
 drawable ic_exit_to_app_24
 drawable ic_favorite_24
@@ -3411,6 +3412,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -4122,6 +4124,7 @@ string content_description_favorite
 string copy
 string copy_toast_msg
 string default_web_client_id
+string delete_button
 string email
 string error_a11y_label
 string error_icon_content_description

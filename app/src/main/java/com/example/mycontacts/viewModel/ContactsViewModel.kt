@@ -15,6 +15,7 @@ class ContactsViewModel : ViewModel() {
     private val mutableContact = MutableLiveData<Contact>()
     private val savedImage = MutableLiveData<Uri>()
     private val updated = MutableLiveData<Boolean>()
+    private val deleted = MutableLiveData<Boolean>()
 
 
     fun verifyInDB(number: Int): MutableLiveData<Boolean> {
@@ -64,6 +65,13 @@ class ContactsViewModel : ViewModel() {
             updated.value = it
         }
         return updated
+    }
+
+    fun deleteContact(number: Int): LiveData<Boolean>{
+        repository.deleteContact(number).observeForever {
+            deleted.value = it
+        }
+        return deleted
     }
 
 }

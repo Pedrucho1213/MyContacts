@@ -3158,6 +3158,7 @@ int drawable ic_clear_black_24 0x7f0800a8
 int drawable ic_clock_black_24dp 0x7f0800a9
 int drawable ic_close_24 0x7f0800aa
 int drawable ic_contacts_24 0x7f0800ab
+int drawable ic_delete_outline_24 0x7f08010a
 int drawable ic_email_24 0x7f0800ac
 int drawable ic_exit_to_app_24 0x7f0800ad
 int drawable ic_favorite_24 0x7f0800ae
@@ -3410,6 +3411,7 @@ int id decelerate 0x7f09009a
 int id decelerateAndComplete 0x7f09009b
 int id decor_content_parent 0x7f09009c
 int id default_activity_button 0x7f09009d
+int id delete 0x7f090234
 int id deltaRelative 0x7f09009e
 int id dependency_ordering 0x7f09009f
 int id design_bottom_sheet 0x7f0900a0
@@ -4121,6 +4123,7 @@ int string content_description_favorite 0x7f1200e5
 int string copy 0x7f120046
 int string copy_toast_msg 0x7f120047
 int string default_web_client_id 0x7f120048
+int string delete_button 0x7f1200e7
 int string email 0x7f120049
 int string error_a11y_label 0x7f12004a
 int string error_icon_content_description 0x7f12004b

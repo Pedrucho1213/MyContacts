@@ -75,6 +75,7 @@
     <string name="contact_number">contact number</string>
     <string name="content_description_favorite">favorite button</string>
     <string name="default_web_client_id" translatable="false">217322878573-tj5bosl5hodvq387efi2cesba26o8kgf.apps.googleusercontent.com</string>
+    <string name="delete_button">delete button</string>
     <string name="email">Email</string>
     <string name="favorite">favorite</string>
     <string name="gcm_defaultSenderId" translatable="false">217322878573</string>

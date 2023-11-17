@@ -69,6 +69,7 @@ drawable ic_add_24
 drawable ic_add_photo_alternate_24
 drawable ic_close_24
 drawable ic_contacts_24
+drawable ic_delete_outline_24
 drawable ic_email_24
 drawable ic_exit_to_app_24
 drawable ic_favorite_24
@@ -82,6 +83,7 @@ id app_bar_container
 id autoCompleteTextView
 id bottom_navigation
 id contacts_rv
+id delete
 id email_txt
 id favorite
 id gender
@@ -128,6 +130,7 @@ string contact_name
 string contact_number
 string content_description_favorite
 string default_web_client_id
+string delete_button
 string email
 string favorite
 string gcm_defaultSenderId

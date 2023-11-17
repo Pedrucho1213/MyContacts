@@ -206,5 +206,32 @@ class FirebaseRepository {
         return success
     }
 
+    fun deleteContact(number: Int): LiveData<Boolean> {
+        session = "pmpedrotorres@gmail.com"
+        if (!session.isNullOrBlank()) {
+            val contactCollection = fireStore.collection("Contacts")
+            val query = contactCollection.whereEqualTo("number", number)
+                .get()
+                .addOnSuccessListener { result ->
+                    if (result.isEmpty) {
+                        success.value = false
+                    } else {
+                        val document = result.documents[0]
+                        document.reference.delete()
+                            .addOnSuccessListener {
+                                success.value = true
+                            }
+                            .addOnFailureListener {
+                                success.value = false
+                            }
+                    }
+                }
+                .addOnFailureListener {
+                    success.value = false
+                }
+        }
+        return success
+    }
+
 }
 

@@ -30,6 +30,7 @@
     <string name="add_photo">Add photo</string>
     <string name="content_description_favorite">favorite button</string>
     <string name="favorite">favorite</string>
+    <string name="delete_button">delete button</string>
 
     <string-array name="gender_options">
         <item>Masculino</item>
