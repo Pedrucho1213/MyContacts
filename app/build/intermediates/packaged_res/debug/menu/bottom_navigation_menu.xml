@@ -12,9 +12,9 @@
         android:icon="@drawable/ic_favorite_24"
         android:title="@string/my_favorites" />
 
-    <item
+<!--    <item
         android:id="@+id/logout_btn"
         app:showAsAction="always"
         android:icon="@drawable/ic_exit_to_app_24"
-        android:title="@string/log_out" />
+        android:title="@string/log_out" />-->
 </menu>

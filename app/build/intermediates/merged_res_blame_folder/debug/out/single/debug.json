@@ -4,6 +4,10 @@
         "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-49:/drawable/ic_close_24.xml"
     },
     {
+        "merged": "com.example.mycontacts.app-merged_res-47:/menu_bottom_navigation_menu.xml.flat",
+        "source": "com.example.mycontacts.app-main-49:/menu/bottom_navigation_menu.xml"
+    },
+    {
         "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-merged_res-47:/drawable_ic_favorite_24.xml.flat",
         "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-49:/drawable/ic_favorite_24.xml"
     },
@@ -28,10 +32,6 @@
         "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-49:/layout/card_contact.xml"
     },
     {
-        "merged": "com.example.mycontacts.app-merged_res-47:/layout_activity_save_contact.xml.flat",
-        "source": "com.example.mycontacts.app-main-49:/layout/activity_save_contact.xml"
-    },
-    {
         "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-merged_res-47:/layout_fragment_new_contact.xml.flat",
         "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-49:/layout/fragment_new_contact.xml"
     },
@@ -52,10 +52,6 @@
         "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-49:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mycontacts.app-merged_res-47:/drawable_ic_account_circle_24.xml.flat",
-        "source": "com.example.mycontacts.app-main-49:/drawable/ic_account_circle_24.xml"
-    },
-    {
         "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-merged_res-47:/drawable_ic_add_photo_alternate_24.xml.flat",
         "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-49:/drawable/ic_add_photo_alternate_24.xml"
     },
@@ -66,6 +62,10 @@
     {
         "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-merged_res-47:/menu_bottom_navigation_menu.xml.flat",
         "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-49:/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-merged_res-47:/drawable_ic_account_circle_24.xml.flat",
+        "source": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-main-49:/drawable/ic_account_circle_24.xml"
     },
     {
         "merged": "/Users/pedromiguelpereztorres/.gradle/daemon/8.0/com.example.mycontacts.app-merged_res-47:/mipmap-xhdpi_ic_launcher.webp.flat",

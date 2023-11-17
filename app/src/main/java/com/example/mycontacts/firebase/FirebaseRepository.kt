@@ -130,7 +130,36 @@ class FirebaseRepository {
             }
         return contactLiveData
     }
+    fun updateContact(contact: Contact): LiveData<Boolean> {
+        val query = fireStore.collection("Contacts")
+            .whereEqualTo("number", contact.number)
+            //.whereEqualTo("email", session)
 
+        query.get().addOnSuccessListener { result ->
+            if (result.isEmpty) {
+                success.value = false
+            } else {
+                val document = result.documents[0]
+                document.reference.update(
+                    "name", contact.name,
+                    "paternalSurname", contact.paternalSurname,
+                    "maternalSurname", contact.maternalSurname,
+                    "age", contact.age,
+                    "number", contact.number,
+                    "gender", contact.gender,
+                    "imageUrl", contact.imageUrl
+                ).addOnSuccessListener {
+                    success.value = true
+                }.addOnFailureListener {
+                    success.value = false
+                }
+            }
+        }.addOnFailureListener {
+            success.value = false
+        }
+
+        return success
+    }
 
 }
 

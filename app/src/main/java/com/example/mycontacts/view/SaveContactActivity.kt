@@ -71,7 +71,6 @@ class SaveContactActivity : AppCompatActivity() {
                 binding.numberInput.setText(contact.number.toString())
                 binding.autoCompleteTextView.setText(contact.gender, false)
                 binding.imageBtn.visibility = View.INVISIBLE
-                binding.topAppBar.title = "Contact details"
 
                 Glide.with(this)
                     .load(contact.imageUrl)
@@ -109,7 +108,6 @@ class SaveContactActivity : AppCompatActivity() {
                     } else {
                         enableInputFields()
                         menuItem.title = "Update"
-                        binding.topAppBar.title = "Edit Contact"
                         isEditMode = !isEditMode
                     }
                      true

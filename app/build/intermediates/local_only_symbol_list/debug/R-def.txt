@@ -91,7 +91,6 @@ id indicator
 id item_1
 id item_2
 id login_btn
-id logout_btn
 id maternal_input
 id maternal_txt
 id name_contact_txt

@@ -29,7 +29,7 @@
                 android:minHeight="?attr/actionBarSize"
                 app:menu="@menu/top_app_bar"
                 app:navigationIcon="@drawable/ic_close_24"
-                app:title="Save contact" />
+                app:title="Contact details" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
