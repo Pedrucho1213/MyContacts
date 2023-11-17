@@ -1,5 +1,5 @@
-com.example.mycontacts.test.app-annotation-experimental-1.3.0-0 /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/2db802a37b672f29d1e64b1575dbe1ae/transformed/annotation-experimental-1.3.0/res
-com.example.mycontacts.test.app-core-1.5.0-1 /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/cbc52662c93df82e34120b351a55332b/transformed/core-1.5.0/res
+com.example.mycontacts.test.app-annotation-experimental-1.3.0-0 /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/cdaaf87d144a2450fbee3c6e0235c501/transformed/annotation-experimental-1.3.0/res
+com.example.mycontacts.test.app-core-1.5.0-1 /Users/pedromiguelpereztorres/.gradle/caches/transforms-3/f35b08a03648d670584127e62567be5b/transformed/core-1.5.0/res
 com.example.mycontacts.test.app-androidTest-2 /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/build/generated/res/resValues/androidTest/debug
 com.example.mycontacts.test.app-mergeDebugAndroidTestResources-3 /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
 com.example.mycontacts.test.app-mergeDebugAndroidTestResources-4 /Users/pedromiguelpereztorres/Documents/Android/MyContacts/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir

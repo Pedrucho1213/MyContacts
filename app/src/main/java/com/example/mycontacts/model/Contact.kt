@@ -6,7 +6,7 @@ data class Contact(
     val maternalSurname: String,
     val age: Int,
     val number: Int,
-    val gender: Int,
+    val gender: String,
     val imageUrl: String,
     val email: String
 )
