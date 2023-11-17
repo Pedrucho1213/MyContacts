@@ -19,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
+import com.bumptech.glide.Glide
 import com.example.mycontacts.R
 import com.example.mycontacts.databinding.ActivitySaveContactBinding
 import com.example.mycontacts.model.Contact
@@ -32,6 +33,7 @@ class SaveContactActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySaveContactBinding
     private val viewModel: ContactsViewModel by lazy { ViewModelProvider(this).get(ContactsViewModel::class.java) }
     private var selectedImageUri: Uri? = null
+    private var isEditMode: Boolean = false
 
     companion object {
         private const val REQUEST_IMAGE_PICK = 1
@@ -43,19 +45,83 @@ class SaveContactActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySaveContactBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val phoneNumber = intent.getIntExtra("phoneNumber", -1)
+
+        if (phoneNumber != -1) {
+            val number = phoneNumber.toInt()
+            fetchDataAndDisableFields(number)
+            binding.topAppBar.menu.findItem(R.id.save_btn).title = "Edit"
+            isEditMode = false
+        } else {
+            binding.topAppBar.menu.findItem(R.id.save_btn).title = "Save"
+            isEditMode = true
+        }
+
         setEvents()
+    }
+
+    private fun fetchDataAndDisableFields(number: Int) {
+        viewModel.getContactByNumber(number).observe(this) { contact ->
+            if (contact != null) {
+                binding.nameInput.setText(contact.name)
+                binding.paternalInput.setText(contact.paternalSurname)
+                binding.maternalInput.setText(contact.maternalSurname)
+                binding.ageInput.setText(contact.age.toString())
+                binding.numberInput.setText(contact.number.toString())
+                binding.autoCompleteTextView.setText(contact.gender, false)
+                binding.imageBtn.visibility = View.INVISIBLE
+                binding.topAppBar.title = "Contact details"
+
+                Glide.with(this)
+                    .load(contact.imageUrl)
+                    .into(binding.imgView)
+
+                disableInputFields()
+            }
+        }
+    }
+
+    private fun disableInputFields() {
+        binding.nameTxt.isEnabled = false
+        binding.paternalTxt.isEnabled = false
+        binding.maternalTxt.isEnabled = false
+        binding.ageTxt.isEnabled = false
+        binding.numberTxt.isEnabled = false
+        binding.gender.isEnabled = false
+    }
+
+    private fun enableInputFields() {
+        binding.nameTxt.isEnabled = true
+        binding.paternalTxt.isEnabled = true
+        binding.maternalTxt.isEnabled = true
+        binding.ageTxt.isEnabled = true
+        binding.numberTxt.isEnabled = true
+        binding.gender.isEnabled = true
     }
 
     private fun setEvents() {
         binding.topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.save_btn -> validateInput()
+                R.id.save_btn -> {
+                    if (isEditMode) {
+                        validateInput()
+                    } else {
+                        enableInputFields()
+                        menuItem.title = "Update"
+                        binding.topAppBar.title = "Edit Contact"
+                        isEditMode = !isEditMode
+                    }
+                     true
+                }
                 else -> false
             }
         }
+
         binding.topAppBar.setNavigationOnClickListener {
             finish()
         }
+
         binding.imageBtn.setOnClickListener {
             showImagePickerDialog()
         }
@@ -264,3 +330,10 @@ class SaveContactActivity : AppCompatActivity() {
         return networkCapabilities?.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) == true
     }
 }
+
+
+
+
+
+
+

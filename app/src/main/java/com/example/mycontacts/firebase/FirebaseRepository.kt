@@ -100,5 +100,37 @@ class FirebaseRepository {
             }
     }
 
+    fun findContactByNumber(number: Int): LiveData<Contact?> {
+
+        val contactCollection = fireStore.collection("Contacts")
+
+        val contactLiveData = MutableLiveData<Contact?>()
+
+        val query = contactCollection.whereEqualTo("number", number)
+        query.get()
+            .addOnSuccessListener { result ->
+                if(result.documents.size > 0) {
+                    val document = result.documents[0]
+                    val name = document.getString("name").toString()
+                    val paternal = document.getString("paternalSurname").toString()
+                    val maternal = document.getString("maternalSurname").toString()
+                    val age = document.getLong("age")?.toInt()
+                    val number = document.getLong("number")?.toInt()
+                    val gender = document.getString("gender").toString()
+                    val imageUrl = document.getString("imageUrl").toString()
+                    val email = document.getString("email").toString()
+                    val contact = age?.let { number?.let {
+                        Contact(name, paternal, maternal, it, it, gender, imageUrl, email)}}
+
+                    contactLiveData.value = contact
+                }
+            }
+            .addOnFailureListener {
+                contactLiveData.value = null
+            }
+        return contactLiveData
+    }
+
 
 }
+

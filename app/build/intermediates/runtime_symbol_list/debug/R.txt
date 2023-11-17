@@ -3143,6 +3143,7 @@ int drawable design_snackbar_background 0x7f08009a
 int drawable google 0x7f08009b
 int drawable googleg_disabled_color_18 0x7f08009c
 int drawable googleg_standard_color_18 0x7f08009d
+int drawable ic_account_circle_24 0x7f080108
 int drawable ic_add_24 0x7f08009e
 int drawable ic_add_photo_alternate_24 0x7f08009f
 int drawable ic_arrow_back_black_24 0x7f0800a0
@@ -3323,6 +3324,7 @@ int id activity_chooser_view_content 0x7f090046
 int id add 0x7f090047
 int id adjust_height 0x7f090048
 int id adjust_width 0x7f090049
+int id age_input 0x7f09022a
 int id age_txt 0x7f09004a
 int id alertTitle 0x7f09004b
 int id aligned 0x7f09004c
@@ -3548,6 +3550,7 @@ int id material_timepicker_mode_button 0x7f090127
 int id material_timepicker_ok_button 0x7f090128
 int id material_timepicker_view 0x7f090129
 int id material_value_index 0x7f09012a
+int id maternal_input 0x7f09022b
 int id maternal_txt 0x7f09012b
 int id matrix 0x7f09012c
 int id media_actions 0x7f09012d
@@ -3586,6 +3589,7 @@ int id mtrl_picker_title_text 0x7f09014d
 int id mtrl_view_tag_bottom_padding 0x7f09014e
 int id multiply 0x7f09014f
 int id name_contact_txt 0x7f090150
+int id name_input 0x7f09022c
 int id name_txt 0x7f090151
 int id navigation_bar_item_active_indicator_view 0x7f090152
 int id navigation_bar_item_icon_container 0x7f090153
@@ -3607,6 +3611,7 @@ int id notification_background 0x7f090162
 int id notification_main_column 0x7f090163
 int id notification_main_column_container 0x7f090164
 int id number_contact_txt 0x7f090165
+int id number_input 0x7f09022d
 int id number_txt 0x7f090166
 int id off 0x7f090167
 int id on 0x7f090168
@@ -3636,6 +3641,7 @@ int id parentRelative 0x7f09017f
 int id parent_matrix 0x7f090180
 int id pass_txt 0x7f090181
 int id password_toggle 0x7f090182
+int id paternal_input 0x7f09022e
 int id paternal_txt 0x7f090183
 int id path 0x7f090184
 int id pathRelative 0x7f090185
