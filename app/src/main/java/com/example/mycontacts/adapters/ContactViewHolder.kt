@@ -10,28 +10,29 @@ import com.example.mycontacts.databinding.CardContactBinding
 import com.example.mycontacts.model.Contact
 import com.example.mycontacts.view.SaveContactActivity
 
-class ContactViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    private var binding = CardContactBinding.bind(view)
-    fun bindView(contact: Contact, context: Context) {
-        binding.nameContactTxt.text =
-            "${contact.name} ${contact.paternalSurname} ${contact.maternalSurname}"
+class ContactViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    private val binding: CardContactBinding = CardContactBinding.bind(itemView)
+
+    fun bind(contact: Contact, context: Context) {
+        val fullName = "%s %s %s".format(contact.name, contact.paternalSurname, contact.maternalSurname)
+        binding.nameContactTxt.text = fullName
         binding.numberContactTxt.text = contact.number.toString()
 
-        if (contact.imageUrl.isBlank()) {
-            Glide.with(context)
-                .load(R.drawable.ic_account_circle_24)
-                .into(binding.imageContactImg)
-        } else {
-            Glide.with(context)
-                .load(contact.imageUrl)
-                .into(binding.imageContactImg)
-        }
+        loadContactImage(contact.imageUrl, context)
 
         itemView.setOnClickListener {
             val intent = Intent(context, SaveContactActivity::class.java)
             intent.putExtra("phoneNumber", contact.number)
             context.startActivity(intent)
         }
+    }
 
+    private fun loadContactImage(imageUrl: String, context: Context) {
+        val placeholderResId = R.drawable.ic_account_circle_24
+
+        val glideRequest = Glide.with(context)
+            .load(if (imageUrl.isBlank()) placeholderResId else imageUrl)
+
+        glideRequest.into(binding.imageContactImg)
     }
 }
