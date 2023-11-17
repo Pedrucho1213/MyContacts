@@ -3454,6 +3454,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id favorite
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3507,8 +3508,6 @@ id info
 id invisible
 id inward
 id italic
-id item_1
-id item_2
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3589,6 +3588,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id my_contacts_section
+id my_favorites_section
 id name_contact_txt
 id name_input
 id name_txt
@@ -4117,6 +4118,7 @@ string common_signin_button_text_long
 string contact_image
 string contact_name
 string contact_number
+string content_description_favorite
 string copy
 string copy_toast_msg
 string default_web_client_id
@@ -4130,6 +4132,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string favorite
 string gcm_defaultSenderId
 string gender
 string gender_options_list

@@ -19,6 +19,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.mycontacts.R
@@ -35,6 +36,7 @@ class SaveContactActivity : AppCompatActivity() {
     private val viewModel: ContactsViewModel by lazy { ViewModelProvider(this).get(ContactsViewModel::class.java) }
     private var selectedImageUri: Uri? = null
     private var isEditMode: Boolean = false
+    private var contact = MutableLiveData<Contact>()
 
     companion object {
         private const val REQUEST_IMAGE_PICK = 1
@@ -84,6 +86,9 @@ class SaveContactActivity : AppCompatActivity() {
                     .load(contact.imageUrl)
                     .into(binding.imgView)
 
+                this.contact.value = contact
+                binding.topAppBar.menu.findItem(R.id.favorite).isVisible = true
+
                 disableInputFields()
             }
         }
@@ -118,6 +123,11 @@ class SaveContactActivity : AppCompatActivity() {
                         menuItem.title = "Update"
                         isEditMode = !isEditMode
                     }
+                    true
+                }
+
+                R.id.favorite -> {
+                    saveToFavorites()
                     true
                 }
 
@@ -232,6 +242,22 @@ class SaveContactActivity : AppCompatActivity() {
                             saveContact()
                         }
                     }
+                }
+            }
+        }
+    }
+
+    private fun saveToFavorites() {
+        contact.value?.let { contact1 ->
+            viewModel.saveFavorites(contact1).observe(this) {
+                if (it) {
+                    Toast.makeText(this, "Added to favorites successfully", Toast.LENGTH_SHORT)
+                        .show()
+                    finish()
+                } else {
+                    Toast.makeText(this, "Removed from favorites successfully", Toast.LENGTH_SHORT)
+                        .show()
+                    finish()
                 }
             }
         }

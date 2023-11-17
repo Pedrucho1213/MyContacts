@@ -2,19 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/item_1"
+        android:id="@+id/my_contacts_section"
         android:enabled="true"
         android:icon="@drawable/ic_contacts_24"
         android:title="@string/my_contacts" />
     <item
-        android:id="@+id/item_2"
+        android:id="@+id/my_favorites_section"
         android:enabled="true"
         android:icon="@drawable/ic_favorite_24"
         android:title="@string/my_favorites" />
 
-<!--    <item
-        android:id="@+id/logout_btn"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_exit_to_app_24"
-        android:title="@string/log_out" />-->
+
+    <!--    <item
+            android:id="@+id/logout_btn"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_exit_to_app_24"
+            android:title="@string/log_out" />-->
 </menu>

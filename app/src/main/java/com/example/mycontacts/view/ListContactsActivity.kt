@@ -6,6 +6,7 @@ import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mycontacts.R
 import com.example.mycontacts.adapters.ContactAdapter
 import com.example.mycontacts.databinding.ActivityListContactsBinding
 import com.example.mycontacts.model.Contact
@@ -21,23 +22,22 @@ class ListContactsActivity : AppCompatActivity(), SearchView.OnQueryTextListener
     private val viewModel by lazy { ViewModelProvider(this)[ContactsViewModel::class.java] }
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityListContactsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setEvents()
-        getAllData()
+        getAllData("Contacts")
     }
 
     override fun onResume() {
         super.onResume()
-        getAllData()
+        getAllData("Contacts")
     }
 
-    private fun getAllData() {
+    private fun getAllData(route: String) {
         contacts.clear()
-        viewModel.fetchContacts().observe(this){
+        viewModel.fetchContacts(route).observe(this) {
             contacts = it.toMutableList()
             initRecyclerView()
         }
@@ -45,8 +45,7 @@ class ListContactsActivity : AppCompatActivity(), SearchView.OnQueryTextListener
     }
 
 
-
-    private fun initRecyclerView(){
+    private fun initRecyclerView() {
         adapter = ContactAdapter(contacts, this)
         binding.contactsRv.layoutManager = LinearLayoutManager(this)
         binding.contactsRv.adapter = adapter
@@ -56,6 +55,21 @@ class ListContactsActivity : AppCompatActivity(), SearchView.OnQueryTextListener
         binding.newContactBtn.setOnClickListener {
             val intent = Intent(this, SaveContactActivity::class.java)
             startActivity(intent)
+        }
+        binding.bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.my_contacts_section -> {
+                    getAllData("Contacts")
+                    true
+                }
+
+                R.id.my_favorites_section -> {
+                    getAllData("Favorites")
+                    true
+                }
+
+                else -> false
+            }
         }
         binding.searchBar.setOnQueryTextListener(this)
         binding.searchBar.setIconifiedByDefault(false)

@@ -29,10 +29,6 @@ class ContactViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             intent.putExtra("phoneNumber", contact.number)
             context.startActivity(intent)
         }
-
-        binding.favoriteButton.setOnClickListener {
-
-        }
     }
 
     private fun loadContactImage(imageUrl: String, context: Context) {

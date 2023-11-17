@@ -28,6 +28,8 @@
     <string name="image_contact_button">Image contact button</string>
     <string name="telephone">Telephone</string>
     <string name="add_photo">Add photo</string>
+    <string name="content_description_favorite">favorite button</string>
+    <string name="favorite">favorite</string>
 
     <string-array name="gender_options">
         <item>Masculino</item>

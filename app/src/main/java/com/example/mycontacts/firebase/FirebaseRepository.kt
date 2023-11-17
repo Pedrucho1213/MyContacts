@@ -38,10 +38,44 @@ class FirebaseRepository {
         return success
     }
 
-    fun getContactsByUserEmail(): LiveData<MutableList<Contact>> {
+    fun saveFavorites(contact: Contact): LiveData<Boolean> {
         session = "pmpedrotorres@gmail.com"
         if (!session.isNullOrBlank()) {
-            val contactsCollection = fireStore.collection("Contacts")
+            val contactCollection = fireStore.collection("Favorites")
+
+            contactCollection.whereEqualTo("number", contact.number)
+                .get()
+                .addOnSuccessListener { documents ->
+                    if (documents.isEmpty) {
+                        contactCollection.add(contact)
+                            .addOnSuccessListener {
+                                success.value = true
+                            }
+                            .addOnFailureListener {
+                                success.value = false
+                            }
+                    } else {
+                        val existingDocument = documents.documents.first()
+                        existingDocument.reference.delete()
+                            .addOnSuccessListener {
+                                success.value = false
+                            }
+                            .addOnFailureListener {
+                                success.value = false
+                            }
+                    }
+                }
+                .addOnFailureListener {
+                    success.value = false
+                }
+        }
+        return success
+    }
+
+    fun getContactsByUserEmail(route: String): LiveData<MutableList<Contact>> {
+        session = "pmpedrotorres@gmail.com"
+        if (!session.isNullOrBlank()) {
+            val contactsCollection = fireStore.collection(route)
             val query = contactsCollection.whereEqualTo("email", "session")
             query.get()
                 .addOnSuccessListener { contact ->
@@ -50,19 +84,26 @@ class FirebaseRepository {
                         val name = document.getString("name").toString()
                         val paternal = document.getString("paternalSurname").toString()
                         val maternal = document.getString("maternalSurname").toString()
-                        val age = document.getLong("age")?.toInt() // Get 'age' as Long then convert to Int
-                        val number = document.getLong("number")?.toInt() // Get 'number' as Long then convert to Int
+                        val age = document.getLong("age")
+                            ?.toInt() // Get 'age' as Long then convert to Int
+                        val number = document.getLong("number")
+                            ?.toInt() // Get 'number' as Long then convert to Int
                         val gender = document.getString("gender").toString()
                         val imageUrl = document.getString("imageUrl").toString()
-                        val contacts = age?.let { it1 -> number?.let { it2 ->
-                            Contact(name,
-                                paternal,
-                                maternal,
-                                it1,
-                                it2,
-                                gender,
-                                imageUrl,
-                                "") } }
+                        val contacts = age?.let { it1 ->
+                            number?.let { it2 ->
+                                Contact(
+                                    name,
+                                    paternal,
+                                    maternal,
+                                    it1,
+                                    it2,
+                                    gender,
+                                    imageUrl,
+                                    ""
+                                )
+                            }
+                        }
                         if (contacts != null) {
                             listContacts.add(contacts)
                         }
@@ -109,7 +150,7 @@ class FirebaseRepository {
         val query = contactCollection.whereEqualTo("number", number)
         query.get()
             .addOnSuccessListener { result ->
-                if(result.documents.size > 0) {
+                if (result.documents.size > 0) {
                     val document = result.documents[0]
                     val name = document.getString("name").toString()
                     val paternal = document.getString("paternalSurname").toString()
@@ -119,8 +160,11 @@ class FirebaseRepository {
                     val gender = document.getString("gender").toString()
                     val imageUrl = document.getString("imageUrl").toString()
                     val email = document.getString("email").toString()
-                    val contact = age?.let { number?.let {
-                        Contact(name, paternal, maternal, it, it, gender, imageUrl, email)}}
+                    val contact = age?.let {
+                        number?.let {
+                            Contact(name, paternal, maternal, it, it, gender, imageUrl, email)
+                        }
+                    }
 
                     contactLiveData.value = contact
                 }
@@ -130,10 +174,11 @@ class FirebaseRepository {
             }
         return contactLiveData
     }
+
     fun updateContact(contact: Contact): LiveData<Boolean> {
         val query = fireStore.collection("Contacts")
             .whereEqualTo("number", contact.number)
-            //.whereEqualTo("email", session)
+        //.whereEqualTo("email", session)
 
         query.get().addOnSuccessListener { result ->
             if (result.isEmpty) {

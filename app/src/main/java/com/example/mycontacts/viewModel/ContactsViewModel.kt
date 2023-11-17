@@ -31,8 +31,15 @@ class ContactsViewModel : ViewModel() {
         return savedInDB
     }
 
-    fun fetchContacts(): LiveData<MutableList<Contact>> {
-        repository.getContactsByUserEmail().observeForever {
+    fun saveFavorites(contact: Contact): MutableLiveData<Boolean>{
+        repository.saveFavorites(contact).observeForever {
+            savedInDB.value = it
+        }
+        return savedInDB
+    }
+
+    fun fetchContacts(route:String): LiveData<MutableList<Contact>> {
+        repository.getContactsByUserEmail(route).observeForever {
             mutableData.value = it
         }
         return mutableData
