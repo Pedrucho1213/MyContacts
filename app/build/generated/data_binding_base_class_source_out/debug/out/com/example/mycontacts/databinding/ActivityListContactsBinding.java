@@ -27,10 +27,10 @@ public final class ActivityListContactsBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigation;
 
   @NonNull
-  public final ExtendedFloatingActionButton newContactBtn;
+  public final RecyclerView contactsRv;
 
   @NonNull
-  public final RecyclerView postsRv;
+  public final ExtendedFloatingActionButton newContactBtn;
 
   @NonNull
   public final SearchBar searchBar;
@@ -39,13 +39,13 @@ public final class ActivityListContactsBinding implements ViewBinding {
   public final AppBarLayout searchContainer;
 
   private ActivityListContactsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigation,
-      @NonNull ExtendedFloatingActionButton newContactBtn, @NonNull RecyclerView postsRv,
-      @NonNull SearchBar searchBar, @NonNull AppBarLayout searchContainer) {
+      @NonNull BottomNavigationView bottomNavigation, @NonNull RecyclerView contactsRv,
+      @NonNull ExtendedFloatingActionButton newContactBtn, @NonNull SearchBar searchBar,
+      @NonNull AppBarLayout searchContainer) {
     this.rootView = rootView;
     this.bottomNavigation = bottomNavigation;
+    this.contactsRv = contactsRv;
     this.newContactBtn = newContactBtn;
-    this.postsRv = postsRv;
     this.searchBar = searchBar;
     this.searchContainer = searchContainer;
   }
@@ -83,15 +83,15 @@ public final class ActivityListContactsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.new_contact_btn;
-      ExtendedFloatingActionButton newContactBtn = ViewBindings.findChildViewById(rootView, id);
-      if (newContactBtn == null) {
+      id = R.id.contacts_rv;
+      RecyclerView contactsRv = ViewBindings.findChildViewById(rootView, id);
+      if (contactsRv == null) {
         break missingId;
       }
 
-      id = R.id.posts_rv;
-      RecyclerView postsRv = ViewBindings.findChildViewById(rootView, id);
-      if (postsRv == null) {
+      id = R.id.new_contact_btn;
+      ExtendedFloatingActionButton newContactBtn = ViewBindings.findChildViewById(rootView, id);
+      if (newContactBtn == null) {
         break missingId;
       }
 
@@ -108,7 +108,7 @@ public final class ActivityListContactsBinding implements ViewBinding {
       }
 
       return new ActivityListContactsBinding((ConstraintLayout) rootView, bottomNavigation,
-          newContactBtn, postsRv, searchBar, searchContainer);
+          contactsRv, newContactBtn, searchBar, searchContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

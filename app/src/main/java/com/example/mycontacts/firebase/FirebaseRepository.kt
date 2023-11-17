@@ -38,9 +38,10 @@ class FirebaseRepository {
     }
 
     fun getContactsByUserEmail(): LiveData<MutableList<Contact>> {
-        if (session != null) {
+        session = "pmpedrotorres@gmail.com"
+        if (!session.isNullOrBlank()) {
             val contactsCollection = fireStore.collection("Contacts")
-            val query = contactsCollection.whereEqualTo("email", session)
+            val query = contactsCollection.whereEqualTo("email", "session")
             query.get()
                 .addOnSuccessListener { contact ->
                     val listContacts = mutableListOf<Contact>()
@@ -48,21 +49,22 @@ class FirebaseRepository {
                         val name = document.getString("name").toString()
                         val paternal = document.getString("paternalSurname").toString()
                         val maternal = document.getString("maternalSurname").toString()
-                        val age = document.getString("age").toString().toInt()
-                        val number = document.getString("number").toString().toInt()
+                        val age = document.getLong("age")?.toInt() // Get 'age' as Long then convert to Int
+                        val number = document.getLong("number")?.toInt() // Get 'number' as Long then convert to Int
                         val gender = document.getString("gender").toString()
                         val imageUrl = document.getString("imageUrl").toString()
-                        val contacts = Contact(
-                            name,
-                            paternal,
-                            maternal,
-                            age,
-                            number,
-                            gender,
-                            imageUrl,
-                            "session"
-                        )
-                        listContacts.add(contacts)
+                        val contacts = age?.let { it1 -> number?.let { it2 ->
+                            Contact(name,
+                                paternal,
+                                maternal,
+                                it1,
+                                it2,
+                                gender,
+                                imageUrl,
+                                "") } }
+                        if (contacts != null) {
+                            listContacts.add(contacts)
+                        }
                     }
                     contactData.value = listContacts
                 }

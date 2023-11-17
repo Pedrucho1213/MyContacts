@@ -77,6 +77,7 @@ id age_txt
 id app_bar_container
 id autoCompleteTextView
 id bottom_navigation
+id contacts_rv
 id email_txt
 id gender
 id google_btn
@@ -93,7 +94,6 @@ id number_contact_txt
 id number_txt
 id pass_txt
 id paternal_txt
-id posts_rv
 id register_btn
 id save_btn
 id search_bar

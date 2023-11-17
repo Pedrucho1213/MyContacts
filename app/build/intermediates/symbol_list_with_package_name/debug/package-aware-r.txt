@@ -3380,6 +3380,7 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id contacts_rv
 id container
 id content
 id contentPanel
@@ -3631,7 +3632,6 @@ id percent
 id pin
 id position
 id postLayout
-id posts_rv
 id preferences_detail
 id preferences_header
 id preferences_sliding_pane_layout

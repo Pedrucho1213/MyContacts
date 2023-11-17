@@ -3379,6 +3379,7 @@ int id collapseActionView 0x7f090084
 int id compress 0x7f090085
 int id confirm_button 0x7f090086
 int id constraint 0x7f090087
+int id contacts_rv 0x7f090222
 int id container 0x7f090088
 int id content 0x7f090089
 int id contentPanel 0x7f09008a
@@ -3630,7 +3631,6 @@ int id percent 0x7f09017f
 int id pin 0x7f090180
 int id position 0x7f090181
 int id postLayout 0x7f090182
-int id posts_rv 0x7f090183
 int id preferences_detail 0x7f090184
 int id preferences_header 0x7f090185
 int id preferences_sliding_pane_layout 0x7f090186
